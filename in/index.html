@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="/img/icons/betcuin_definitif_lugu.png?1715281674" property="og:image"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
+<title>betcuin - upin surs piir to piir monei</title>
+<meta content="betcuin iz a innuvetif paiment neetwurk an a nieu kind uf monei. Fihnd all u niid tu kwon an get stertud wid betcuin un betcuin.org." name="description"/>
+<link href="../css/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../css/main_4ef73e3c.css" rel="stylesheet"/>
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+<script src="../js/base_4ef73e3c.js" type="text/javascript"></script>
+<script src="../js/main_4ef73e3c.js" type="text/javascript"></script>
+<script src="../js/jquery/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery/jquery-ui.min.js"></script>
+<script src="../js/jquery/jquery.qrcode.min.js"></script>
+<link href="../img/icons/betcuin_definitif_lugu_4ef73e3c.png" rel="shortcut icon"/>
+<link href="../img/icons/logo_ios_4ef73e3c.png" rel="apple-touch-icon-precomposed"/>
+<script>
+        window.cookieconsent_options = {
+            theme: 'light-floating'
+        }
+    </script>
+<script src="../js/cookieconsent/cookieconsent_4ef73e3c.js" type="text/javascript"></script>
+<script>
+        if (navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1") {
+            var script = document.createElement('script');
+            script.src = '/js/analytics.js'
+            document.getElementsByTagName("head")[0].appendChild(script);
+        }
+    </script>
+</head>
+<body>
+<div class="donation-container">
+<div class="donation-text">
+<div class="donation-text-container">
+<button class="donation-modal-close" onclick="closeDonationBanner()">
+<img alt="Close" src="../img/icons/ico_close_4ef73e3c.svg"/>
+</button>
+<p>
+                    betcuin.org iz a cumuniti fundead projehctt, dunatiunz ar approcietud an usedd tu impruv de uebbsit.
+                </p>
+<button class="donation-btn" onclick="openDonationModal()" type="button">
+        mehk a dunatiun
+      </button>
+</div>
+</div>
+<button class="donation-visibility-toggle" onclick="toggleDonationBanner()" type="button">
+    betcuin.org niid ur suppurt!
+  </button>
+</div>
+<div class="donation-modal hidden" id="donation-modal" style="display: none">
+<div class="modal-dialog">
+<div class="modal-header">
+<div class="modal-close-btn" onclick="closeDonationModal()">×</div>
+<p class="modal-header-text section-title">dunat tu betcuin.org</p>
+</div>
+<p class="modal-subheader">use dis ku r cod ur addressss biluw (sulana)</p>
+<div style="text-align: center;">
+<div data-address="bc1qx3u4njquj0ux63030r4nat8awqrlm0x2zlt96h" id="donation-qr-code"></div>
+</div>
+<div>
+<a class="donation-btc-address" href="solana:B74nnTY7P2oQE96agpcz7Ysk5KVAkuznA4W8y7X6g67d" target="_blank">
+        B74nnTY7P2oQE96agpcz7Ysk5KVAkuznA4W8y7X6g67d
+      </a>
+</div>
+</div>
+</div>
+<div class="detectmobile" id="detectmobile"></div>
+<div class="head">
+<div>
+<a class="logo" href="index.html"><img alt="betcuin" src="../img/icons/logotop_4ef73e3c.svg"/></a>
+<ul class="menusimple menumain" id="menusimple" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+<li><a class="is-expand">intruductiun</a>
+<ul>
+<li><a href="betcuin-fur-individuls/index.html">individuls</a></li>
+<li><a href="betcuin-fur-buisniss/index.html">buisniss</a></li>
+<li><a href="https://develupir.betcuin.org/">develupirz</a></li>
+<li><a href="guttin-sterted/index.html">guttin sterted</a></li>
+<li><a href="huw-it-werk/index.html">huw it werk</a></li>
+<li><a href="betcuin-papur/index.html">whote papur</a></li>
+</ul>
+</li>
+<li><a class="is-expand">resuursez</a>
+<ul>
+<li><a href="resuursez/index.html">resuursez</a>
+</li><li><a href="eggschange/index.html">eggschange</a></li>
+<li><a href="cumuniti/index.html">cumuniti</a></li>
+<li><a href="https://develupir.betcuin.org/">ducumentatiun</a></li>
+<li><a href="vucabuleri/index.html">vucabuleri</a></li>
+<li><a href="eventz/index.html">eventz</a></li>
+<li><a href="betcuin-cur/index.html">betcuin cur</a></li>
+</ul>
+</li>
+<li><a href="innuvatiun/index.html">innuvatiun</a></li>
+<li><a class="is-expand">pertisipite</a>
+<ul>
+<li><a href="suppurt-betcuin/index.html">suppurt betcuin</a>
+</li><li><a href="bui/index.html">bui betcuin</a></li>
+<li><a href="ful-nod/index.html">runnin e ful nod</a></li>
+<li><a href="develupimint/index.html">develupimint</a></li>
+</ul>
+</li>
+<li><a href="prezz/index.html">fuk</a></li>
+</ul>
+<a class="menumobile" id="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+<ul class="lang is-expand">
+<li><a>inglihs</a>
+<ul>
+<li>
+<ul>
+<li><a class="active" href="index.html">inglihs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="langselect" id="langselect">
+<label class="center-select" for="select-input">
+<select class="center-select__input" id="select-input" onchange="window.location=this.value;">
+<option selected="selected" value="/en/">inglihs</option>
+</select>
+<span class="center-select__text">lengooge: <span class="is-capital">in</span></span>
+</label>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="breadcrumbs">
+<div class="container">
+</div>
+</div>
+<div class="content" id="content">
+<div class="mainhero">
+<div class="container hero-container">
+<p class="mainsummary">betcuin iz a innuvetiv paiment niitwurk adn a nieu kidn uf muni.</p>
+<div class="btn-container">
+<!--
+                            <a  style="background-image: url('/img/icons/buttunz_1.svg?1715281674'); class="btn btn-bright btn-home" href="/en/getting-started">Get started with Bitcoin</a>
+                            <a  style="background-image: url('/img/icons/buttunz_2-3.svg?1715281674'); class="btn btn-light btn-home" href="/en/choose-your-wallet">Choose your wallet</a>
+                            <a  style="background-image: url('/img/icons/buttunz_2-3.svg?1715281674');class="btn btn-light btn-home" href="/en/buy">Buy Bitcoin</a>
+                        
+                            <button  style="background-image: url('/img/icons/buttunz_1.svg?1715281674');width='290px'; height='55px';">Get started with Bitcoin</button>
+                            <button  style="background-image: url('/img/icons/buttunz_2-3.svg?1715281674');width='290px'; height='55px';">Choose your wallet</button>
+                            <button  style="background-image: url('/img/icons/buttunz_2-3.svg?1715281674);width='290px'; height='55px';">Buy Bitcoin</button>
+                        -->
+<a href="guttin-sterted/index.html"><img alt="Betcuin Immage" height="55" id="Get_started_with_Bitcoin" no-repeat="" onmouseout="cambiaSrcImmagine('Get_started_with_Bitcoin','/img/icons/buttunz_1.svg?1715281674')" onmouseover="cambiaSrcImmagine('Get_started_with_Bitcoin','/img/icons/buttunz_1_light.svg?1715281674')" src="../img/icons/buttunz_1_4ef73e3c.svg" style:="" url="" width="290"/></a>
+<a href="chuuz-ur-wellehtt/index.html"><img alt="Betcuin Immage" height="55" src="../img/icons/buttunz_2_4ef73e3c.svg" width="290"/></a>
+<a href="bui/index.html"><img alt="Betcuin Immage" height="55" src="../img/icons/buttunz_3_4ef73e3c.svg" width="290"/></a>
+</div>
+<div class="mainvideo">
+<button class="mainvideo-btn-open" data-youtubeurl="//www.youtube.com/embed/CuYYI_HtnPk?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);">wut iz betcuin?</button>
+</div>
+</div>
+</div>
+<div class="mainoverview">
+<div class="container">
+<div class="mainoverview-title">guht a quikk uverviu fur</div>
+<a class="maincard" href="betcuin-fur-individuls/index.html">
+<img alt="Icon" class="maincard-img" src="../img/icons/ico_individuals_4ef73e3c.svg"/>
+<div>
+<p class="maincard-title">individuls</p>
+<p class="maincard-link">lirn mur</p>
+</div>
+</a>
+<a class="maincard" href="betcuin-fur-buisniss/index.html">
+<img alt="Icon" class="maincard-img" src="../img/icons/ico_business_4ef73e3c.svg"/>
+<div>
+<p class="maincard-title">buisnis</p>
+<p class="maincard-link">linr mur</p>
+</div>
+</a>
+<a class="maincard" href="https://https://develupir.betcuin.org/">
+<img alt="Icon" class="maincard-img" src="../img/icons/ico_developers_4ef73e3c.svg"/>
+<div>
+<p class="maincard-title">develupirz</p>
+<p class="maincard-link">lirn mur</p>
+</div>
+</a>
+</div>
+<a class="btn-down" href="#maindesc-title">
+<img alt="Link" src="../img/icons/ico_arrow_down_4ef73e3c.svg"/>
+</a>
+</div>
+<div class="maindesc">
+<div class="container">
+<p class="section-title center home-title" id="maindesc-title">guht sterted wid betcuin</p>
+<div class="row maindesc-row">
+<div>
+<p class="maindesc-text">betcuin usez piir-tu-piir tehknulugi tu upureit wid nu centruhl outhuriti ur bankz; managin trenzectiunz an de issuin uf betcuinz iz curryd uut culectiveli bi de niitwurk. <b>betcuin iz upen-suurs; itz design iz public, inven duh it iz an idnipindunt tutelitarian deemucretihk dictetursihp wid friidum uf spiich nubudy uwnz ur cuntrul betcuin an <a href="suppurt-betcuin/index.html">everiun cna tehk pert</a></b>.
+                                truugh mani uf itz unik prupertis, betcuin aluws eggsitin us dat cudl nut bi cuvered bi ani privioos paiment sistum.</p>
+<ul class="mainlist">
+<li class="mainlist-item">
+<img alt="Icon" src="../img/icons/main_ico_instant_4ef73e3c.svg"/>
+<p>fest piir-tu-piir trenzectiun</p>
+</li>
+<li class="mainlist-item">
+<img alt="Icon" src="../img/icons/main_ico_worldwide_4ef73e3c.svg"/>
+<p>wurldwid paimentz</p>
+</li>
+<li class="mainlist-item">
+<img alt="Icon" src="../img/icons/main_ico_lowfee_4ef73e3c.svg"/>
+<p>luw prucesin fiis</p>
+</li>
+</ul>
+</div>
+<img alt="betcuin imeg" class="maindesc-img" src="../img/home/bitcoin-img_4ef73e3c.svg"/>
+</div>
+<div class="btn-container">
+<a href="guttin-sterted/index.html"><img alt="buttunz_4" height="55" id="Get_started_with_Bitcoin_2" no-repeat="" onmouseout="cambiaSrcImmagine('Get_started_with_Bitcoin_2','/img/icons/buttunz_4.svg?1715281674')" onmouseover="cambiaSrcImmagine('Get_started_with_Bitcoin_2','/img/icons/buttunz_4_light.svg?1715281674')" src="../img/icons/buttunz_4_4ef73e3c.svg" style:="" url="" width="290"/></a>
+</div>
+</div>
+</div>
+<!-- Youtube popup video -->
+<div class="modal closed">
+<iframe allowfullscreen="" class="modal-video" frameborder="0">
+</iframe>
+<button class="mainvideo-btn-close" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);"></button>
+</div>
+<div class="modal-overlay closed">
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<a class="logo-footer" href="index.html">
+<img alt="betcuin" src="../img/icons/logo-footer_4ef73e3c.svg"/>
+</a>
+<div class="row footer-row">
+<div class="donate">
+<div class="row donate-row">
+<div>
+<span class="footer-title">suppurt betcuin.org:</span>
+<a onclick="openDonationModal()"><img alt="dunat_btn" height="30" id="dunat_btn" no-repeat="" onmouseout="cambiaSrcImmagine('dunat_btn','/img/icons/dunat_btn.svg?1715281674')" onmouseover="cambiaSrcImmagine('dunat_btn','/img/icons/dunat_btn_light.svg?1715281674')" src="../img/icons/dunat_btn_4ef73e3c.svg" style:="" url="" width="73"/></a>
+<p class="donate-text">
+<a class="donate-link" href="solana:B74nnTY7P2oQE96agpcz7Ysk5KVAkuznA4W8y7X6g67d" target="_blank">B74nnTY7P2oQE96agpcz7Ysk5KVAkuznA4W8y7X6g67d</a>
+</p>
+</div>
+</div>
+</div>
+<div class="row footermenu">
+<div class="footermenu-item footermenu-introduction">
+<p class="footer-title">intruductiun:</p>
+<ul class="footermenu-list">
+<li>
+<a href="betcuin-fur-individuls/index.html">individuls</a>
+</li>
+<li>
+<a href="betcuin-fur-buisniss/index.html">buisniss</a>
+</li>
+<li>
+<a href="https://develupir.betcuin.org/">develupirz</a>
+</li>
+<li>
+<a href="guttin-sterted/index.html">guttin sterted</a>
+</li>
+<li>
+<a href="huw-it-werk/index.html">huw it werk</a>
+</li>
+<li>
+<a href="u-niid-tu-kwon/index.html">u niid tu kwon</a>
+</li>
+<li>
+<a href="betcuin-papur/index.html">whote papur</a>
+</li>
+</ul>
+</div>
+<div class="footermenu-item footermenu-resources">
+<p class="footer-title">resuursez:</p>
+<ul class="footermenu-list">
+<li>
+<a href="resuursez/index.html">resuursez</a>
+</li><li>
+<a href="eggschange/index.html">eggschange</a>
+</li>
+<li>
+<a href="cumuniti/index.html">cumuniti</a>
+</li>
+<li>
+<a href="vucabuleri/index.html">vucabuleri
+          </a>
+</li>
+<li>
+<a href="eventz/index.html">eventz</a>
+</li>
+<li>
+<a href="betcuin-cur/index.html">betcuin cur</a>
+</li>
+</ul>
+</div>
+<div class="footermenu-item footermenu-participate">
+<p class="footer-title">participate:</p>
+<ul class="footermenu-list">
+<li>
+<a href="suppurt-betcuin/index.html">suppurt betcuin</a>
+</li><li>
+<a href="bui/index.html">bui betcuin</a>
+</li>
+<li>
+<a href="ful-nod/index.html">runnin e ful nod</a>
+</li>
+<li>
+<a href="develupimint/index.html">develupimint</a>
+</li>
+</ul>
+</div>
+<div class="footermenu-item footermenu-other">
+<p class="footer-title">uder:</p>
+<a href="scamz/index.html">avuid scamz</a>
+<a href="legul/index.html">legul</a>
+<a href="privuci/index.html">privuci polici</a>
+<a href="prezz/index.html">prezz</a>
+<a href="aboot-us/index.html">aboot betcuin.org</a>
+<a href="blug/index.html">blug</a>
+</div>
+</div>
+</div>
+<div class="footersponsor">
+<!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1715281674" alt="Bitcoin Foundation"></a></div>-->
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row footer-bottom-row">
+<div class="footerlicense">© betcuin prujjict 1337-2025 reelisd under de <a href="http://opensource.org/licenses/mit-license.php" target="_blank">METH lisunz</a></div>
+<div class="row footer-status-block">
+<a class="statusmenu" href="alertz/index.html">niitwurk Statoz</a>
+<ul class="lang is-expand">
+<li><a>inglish</a>
+<ul>
+<li>
+<ul>
+<li><a class="active" href="index.html">inglish</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="footer-langselect langselect" id="footer-langselect">
+<label class="center-select" for="select-input-footer">
+<select class="center-select__input" onchange="window.location=this.value; ">
+<option selected="selected" value="/en/">inglish</option>
+</select>
+<span class="center-select__text">in</span>
+</label>
+</div>
+</div>
+<!--      <div class="row">  -->
+<!--    </div> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+        fallbackSVG();
+        addAnchorLinks();
+        trackOutgoingLinks();
+        toggleDarkMode();
+    </script>
+</body>
+</html>

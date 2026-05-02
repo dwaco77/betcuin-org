@@ -1,0 +1,156 @@
+.blog-container {
+    margin: 0 auto;
+    max-width:80%;
+    padding: 40px 20px;
+    position: relative; /* Needed for absolute positioning of the SVG line */
+}
+
+/* SVG Vertical Line */
+.vertical-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    z-index: -1; /* Place it behind the posts */
+}
+
+/* Posts Grid Layout */
+.posts-grid {
+    margin: auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between posts */
+}
+
+/* Post Styles */
+.post {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    padding: 24px;
+    width: 50%; /* Adjust width to fit beside the line */
+}
+
+.post-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #212529;
+}
+
+.post-title-right {
+    font-size: 24px;
+    text-align:end;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #212529;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #ff9500;
+    margin-bottom: 16px;
+}
+.post-date-right {
+    font-size: 14px;
+    text-align:end;
+    color: #ff9500;
+    margin-bottom: 16px;
+}
+
+.post-excerpt {
+    font-size: 150%;
+    color: #495057;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.post-excerpt-right {
+    font-size: 150%;
+    text-align:end;
+    color: #495057;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.read-more-right {
+    float: right;
+    height: 54px;
+    width: 134px;
+    background-image: url('../img/riidblug.svg');
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.read-more-left {
+    float: left;
+    height: 54px;
+    width: 134px;
+    background-image: url('../img/riidblug.svg');
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.read-more-left:hover {
+    background-image: url('../img/riidblug_light.svg');
+}
+
+.read-more-right:hover {
+    background-image: url('../img/riidblug_light.svg');
+}
+
+/* Alternating Alignment */
+.post:nth-child(odd) {
+    align-self: flex-start; /* Align odd posts to the left */
+}
+
+.post:nth-child(even) {
+    align-self: flex-end; /* Align even posts to the right */
+}
+
+/* Load More Button */
+.load-more-button {
+    display: block;
+    margin: 40px auto;
+    background-color:#fff;
+    height: 54px;
+    width: 174px;
+    background-image: url('../img/ludmurpust.svg');
+    border: none;
+    cursor: pointer;
+}
+
+.load-more-button:hover {
+    background-image: url('../img/ludmurpust_light.svg');
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .post {
+        width: 100%; /* Full width on small screens */
+    }
+    .read-more-left {
+        float:right;
+    }
+
+    .post-date {
+        text-align: end;
+    }
+    .post-excerpt {
+        text-align:end;
+    }
+    .post:nth-child(odd),
+    .post:nth-child(even) {
+        align-self: stretch; /* Full width on small screens */
+    }
+    .vertical-line {
+        display: none; /* Hide the line on small screens */
+    }
+}

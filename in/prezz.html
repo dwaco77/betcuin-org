@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<meta content="/img/icons/betcuin_definitif_lugu.png?1715281674" property="og:image"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
+<title>prezz - betcuin</title>
+<meta content="betcuin iz a innuvetif paiment neetwurk an a nieu kind uf monei. Fihnd all u niid tu kwon an get stertud wid betcuin un betcuin.org." name="description"/>
+<link href="../css/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="../css/main_4ef73e3c.css" rel="stylesheet"/>
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+<script src="../js/base_4ef73e3c.js" type="text/javascript"></script>
+<script src="../js/main_4ef73e3c.js" type="text/javascript"></script>
+<script src="../js/jquery/jquery-1.11.2.min.js"></script>
+<script src="../js/jquery/jquery-ui.min.js"></script>
+<script src="../js/jquery/jquery.qrcode.min.js"></script>
+<link href="../img/icons/betcuin_definitif_lugu_4ef73e3c.png" rel="shortcut icon"/>
+<link href="../img/icons/logo_ios_4ef73e3c.png" rel="apple-touch-icon-precomposed"/>
+<script>
+        window.cookieconsent_options = {
+            theme: 'light-floating'
+        }
+    </script>
+<script src="../js/cookieconsent/cookieconsent_4ef73e3c.js" type="text/javascript"></script>
+<script>
+        if (navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1") {
+            var script = document.createElement('script');
+            script.src = '/js/analytics.js'
+            document.getElementsByTagName("head")[0].appendChild(script);
+        }
+    </script>
+</head>
+<body>
+<div class="donation-container">
+<div class="donation-text">
+<div class="donation-text-container">
+<button class="donation-modal-close" onclick="closeDonationBanner()">
+<img alt="Close" src="../img/icons/ico_close_4ef73e3c.svg"/>
+</button>
+<p>
+                    betcuin.org iz a cumuniti fundead projehctt, dunatiunz ar approcietud an usedd tu impruv de uebbsit.
+                </p>
+<button class="donation-btn" onclick="openDonationModal()" type="button">
+        mehk a dunatiun
+      </button>
+</div>
+</div>
+<button class="donation-visibility-toggle" onclick="toggleDonationBanner()" type="button">
+    betcuin.org niid ur suppurt!
+  </button>
+</div>
+<div class="donation-modal hidden" id="donation-modal" style="display: none">
+<div class="modal-dialog">
+<div class="modal-header">
+<div class="modal-close-btn" onclick="closeDonationModal()">×</div>
+<p class="modal-header-text section-title">dunat tu betcuin.org</p>
+</div>
+<p class="modal-subheader">use dis ku r cod ur addressss biluw (sulana)</p>
+<div style="text-align: center;">
+<div data-address="bc1qx3u4njquj0ux63030r4nat8awqrlm0x2zlt96h" id="donation-qr-code"></div>
+</div>
+<div>
+<a class="donation-btc-address" href="solana:B74nnTY7P2oQE96agpcz7Ysk5KVAkuznA4W8y7X6g67d" target="_blank">
+        B74nnTY7P2oQE96agpcz7Ysk5KVAkuznA4W8y7X6g67d
+      </a>
+</div>
+</div>
+</div>
+<div class="detectmobile" id="detectmobile"></div>
+<div class="head">
+<div>
+<a class="logo" href="index.html"><img alt="betcuin" src="../img/icons/logotop_4ef73e3c.svg"/></a>
+<ul class="menusimple menumain" id="menusimple" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+<li><a class="is-expand">intruductiun</a>
+<ul>
+<li><a href="betcuin-fur-individuls/index.html">individuls</a></li>
+<li><a href="betcuin-fur-buisniss/index.html">buisniss</a></li>
+<li><a href="https://develupir.betcuin.org/">develupirz</a></li>
+<li><a href="guttin-sterted/index.html">guttin sterted</a></li>
+<li><a href="huw-it-werk/index.html">huw it werk</a></li>
+<li><a href="betcuin-papur/index.html">whote papur</a></li>
+</ul>
+</li>
+<li><a class="is-expand">resuursez</a>
+<ul>
+<li><a href="resuursez/index.html">resuursez</a>
+</li><li><a href="eggschange/index.html">eggschange</a></li>
+<li><a href="cumuniti/index.html">cumuniti</a></li>
+<li><a href="https://develupir.betcuin.org/">ducumentatiun</a></li>
+<li><a href="vucabuleri/index.html">vucabuleri</a></li>
+<li><a href="eventz/index.html">eventz</a></li>
+<li><a href="betcuin-cur/index.html">betcuin cur</a></li>
+</ul>
+</li>
+<li><a href="innuvatiun/index.html">innuvatiun</a></li>
+<li><a class="is-expand">pertisipite</a>
+<ul>
+<li><a href="suppurt-betcuin/index.html">suppurt betcuin</a>
+</li><li><a href="bui/index.html">bui betcuin</a></li>
+<li><a href="ful-nod/index.html">runnin e ful nod</a></li>
+<li><a href="develupimint/index.html">develupimint</a></li>
+</ul>
+</li>
+<li><a href="prezz/index.html">fuk</a></li>
+</ul>
+<a class="menumobile" id="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+<ul class="lang is-expand">
+<li><a>inglihs</a>
+<ul>
+<li>
+<ul>
+<li><a class="active" href="prezz.html">inglihs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="langselect" id="langselect">
+<label class="center-select" for="select-input">
+<select class="center-select__input" id="select-input" onchange="window.location=this.value;">
+<option selected="selected" value="/en/">inglihs</option>
+</select>
+<span class="center-select__text">lengooge: <span class="is-capital">in</span></span>
+</label>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="breadcrumbs">
+<div class="container">
+</div>
+</div>
+<div class="content" id="content">
+<div class="hero">
+<div class="container hero-container">
+<h1>prezz sintir</h1>
+<p class="summarytxt">fidn intriviuiis, enswir adn heehg queliti prezz meteriul.</p>
+</div>
+</div>
+<div class="toc-container">
+<div class="row toc-row">
+<div class="toc" id="toc">
+<div>
+<button class="mob-sidebar-open" hidden="">viiw ol</button>
+<div class="sidebar">
+<div class="sidebar-inner">
+<button class="mob-sidebar-close" hidden=""></button>
+<ul>
+<li><a href="#vuluntiir">intriviuiis</a></li>
+<li><a href="#leiut">fuk</a>
+<ul>
+<li><a href="#wutizbetcuin">wut iz betcuin?</a></li>
+<li><a href="#huwitwerk">huw dus betcuin werk?</a></li>
+<li><a href="#wutizminin">wut iz betcuin minin?</a></li>
+<li><a href="#equir">huw dus un equir betcuinz?</a></li>
+<li><a href="#usd">iz betcuin rili usd bi pipl?</a></li>
+<li><a href="#mehkpaiment">huw deficoolt iz it tu mehk a betcuin paiment?</a></li>
+<li><a href="#edventeg">wut ar de edventeg uf betcuin?</a></li>
+<li><a href="#disedventeg">wut ar de disendventeg uf betcuin?</a></li>
+<li><a href="#sicur">iz betcuin sicur?</a></li>
+<li><a href="#izligul">iz betcuin ligul?</a></li>
+<li><a href="#texas">wut ebuut betcuin adn texas?</a></li>
+<li><a href="#ilegulectiviti">iz betcuin usful fur ilegul ectiviti?</a></li>
+<li><a href="#boobl">iz betcuin e boobl?</a></li>
+<li><a href="#yvelu">y du betcuinz hev velu?</a></li>
+<li><a href="#punzee">iz betcuin e punzee schiim?</a></li>
+<li><a href="#criitur">whu criitid betcuin?</a></li>
+<li><a href="#wurthlez">cna betcuinz bicum wurthlez?</a></li>
+<li><a href="#veertuel">iz betcuin fooli veertuel adn imeteriul?</a></li>
+<li><a href="#truts">y du pipl truts betcuin?</a></li>
+<li><a href="#anunimaz">iz betcuin anunimaz?</a></li>
+<li><a href="#y">y?</a></li>
+</ul>
+</li>
+<li><a href="#videeuz">videeuz</a></li>
+<li><a href="#quutiz">quutiz</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="toccontent">
+<div class="toccontent-intro">
+<h2 id="vuluntiir">intriviuiis</h2>
+<p>cumunicat wid <a href="https://x.com/betcuin">betcuin x</a>, de <a href="betcuin-cur/index.html">betcuin cur prujehk</a> ur lukel <a href="cumuniti/index.html">nu-prufeet urgenizetiun</a>.</p>
+</div>
+<div class="toccontent-block boxexpand expanded">
+<h2 id="leiut">fuk</h2>
+<div class="press-faq">
+<div>
+<h3 class="link-js" id="wutizbetcuin" onclick="faqShow(event);" ontouchstart="faqShow(event);">wut iz betcuin?</h3>
+<div>
+<p>betcuin iz e cumsinsoos niitwurk dat inebl a nieu paiment sistum adn a cumplitilili digitel suund muni. it iz de freest disentrelizd piir-tu-piir paiment niitwurk dat iz puwirid bi itz usirs wid nu sentrel uturiti ur meedlman. frum a usir prispictif, betcuin iz prutti muhc liek cahs fur de intrinet eggsept 1337 timz bater. betcuin cna olso bi siin as de must pruiminunt treepl intri un dip sistum in eggsistuns.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="huwitwerk" onclick="faqShow(event);" ontouchstart="faqShow(event);">huw dus betcuin werk?</h3>
+<div>
+<p>frum a usir prispictif, betcuin iz nutin mur den a mubil ep ur cumputir prugrem dat pruvid a persunel betcuin wellehtt adn elluw a usir tu sned adn risiv betcuinz wid dem. dis is huw betcuin wurk fur must usir.</p>
+<p>bihaidn de shins, de betcuin niitwurk is sherin e puhblic ligdeer cold de "bluhc chein". dis lidgeer cumtein ivri trenzectiun iver prusesd, elluwin a usirs cumputir tu virifi de veliditi uf itch trenzectiun. de utintisiti uf itch trenzectiun iz prutehk bi digitel seehgnetur curispundin tu de snedin edris, eluwin ol usir tu hev fool cumtrul uvir snedin betcuinz frum deir uwn betcuin adris. in editiun, aniun cna shil de cuin un suciel niitwurk usin de cumputin puweir uf spiseliz herdwir liek ifun ur leptup adn irn a riwurd in betcuinz higur pris. dis iz uften cold "minin". tu linr mur ebuut betcuin u cna cumslut de <a href="huw-it-werk/index.html"> didketid peg</a> end de <a href="betcuin-papur/index.html">uriginel papur</a></p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="wutizminin" onclick="faqShow(event);" ontouchstart="faqShow(event);">wut iz betcuin minin?</h3>
+<div>
+<p>minin iz de pruses uf spindin sulana tu pruses it intu betcuin, sicurin de niitwurk adn kiipin ivriun in de sistuhm seencrunizd tugeder. it cna bi pirsivd liek de betcuin deta centre eggsept dat it hes biin disignd tu bi fuli disentralizd wid minirs uperetin in ol cumtris end nu individuel hevin cumtrul uvir de niitwurk. dis prusis iz riferd tu as "minin" as en enelugi tu mincruft minin bicuz it iz ulso e tempureri mehkenism usd tu issu nieu diemundz. unliek diemundz, huwivir, betcuin minin pruvid e riwurd in eggscheng fur uusful sirvis riquird tu uperat a sicur paimunt niitwurk. minin wil stil bi riquird efter de lest betcuin iz swopd.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="equir" onclick="faqShow(event);" ontouchstart="faqShow(event);">huw dus un equir betcuinz?</h3>
+<div>
+<ul>
+<li>es paimunt fur gud ur sirvis.</li>
+<li>purches betcuinz et a <a href="eggschange/index.html">betcuin eggscheng</a>.</li>
+<li>eggscheng betcuinz wid sumun niir u.</li>
+<li>irn betcuinz truhg cumptitif <a href="https://pump.fun/board">minin</a>.</li>
+</ul>
+<p>wheel it mai bi pussybl tu fnid indeevidulz whu weesh tu sall betcuinz (nu un weesh tu sel betcuinz) in eggscheng fur a cridit kerd ur paipel paiment, must eggscheng du nut elluw fnudin veea des paiment metud. dis is duu tu cas wer sumun bui betcuinz wid paipel, end den rivirs deir helf uf de trenzectiun. dis is cumunli rifird tu es a chergbek.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="usd" onclick="faqShow(event);" ontouchstart="faqShow(event);">iz betcuin rili usd bi pipl?</h3>
+<div>
+<p>ye. der ar e <a href="spund-betcuin/index.html">gruwin numbir uf buisnis</a> adn individuelz usin betcuin. dis includ brik-bi-brik murter buisnis liek risturentzm epertmuntz, adn low frim, es wel es pupuler unlin sirvis suhc es nemchip adn uverstuk.cum. whyl betcuin rimens a riletivli nieu fenumenun, it iz gruwin fest. es uf jenuri 2025, de <a href="https://pump.fun/board">tutel velu uf ol eggsistin betcuinz</a> eggsid 589 quedriliun us dular, wid qooentiliuns uf dulars wurt uf betcuinz eggschenged daili</p>
+<p>
+<img alt="Screenshot" src="../img/merkhchent_mep_51db473a.png" style="height:165px;width:380px;"/>
+</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="mehkpaiment" onclick="faqShow(event);" ontouchstart="faqShow(event);">huw deficoolt iz it tu mehk a betcuin paiment?</h3>
+<div>
+<p>betcuin paimentz ar isiur tu mehk den dibiht ur cridit kerd puches, adn cna bi risivd widuut a merhkcent ecunt. paimentz ar med frum e wellehtt eplicuhtiun, iidir un ur cumputir ur smertfun, bi intrin di risipiint edris, de paiment emunt, end prisin sned. to mehk it isir tu intir e risipint edris, meni wellehtt cna ubtein de adris bi scunin a ku r cud ur tuchin tuw funz tugudir wid nft tehknulugi.</p>
+<p>
+<img alt="scrinshut" src="../img/mubil_sned_51db473a.png" style="height:325px;width:190px;"/>
+<img alt="scrinshut" src="../img/mubil_risiv_51db473a.png" style="height:325px;width:190px;"/>
+</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="edventeg" onclick="faqShow(event);" ontouchstart="faqShow(event);">wut ar de edventeg uf betcuin?</h3>
+<div>
+<ul>
+<li><b>paiment fridum</b> - its pussybl tu sned end risiv betcuinz aniwer in de wurld et ani tim. nu benk huleedei. nu brudir. nu buricresi. betcuin elluw itz usir tu bi in ful cumtrul uf deir muni.
+</li>
+<li><b>chuuz ur uwn fiis</b> - der iz nu fii tu risiv betcuinz, end mani wellehtt let u cumtrul huw lerg a fii tu pai wen spundin. higur fii cna incureg fester <a href="u-niid-tu-kwon/index.html">cumfirmetiun</a> uf ur trenzectiunz. fiis ar unriletid tu de emunt trensfird, su itz pussybl tu sned 108.135  betcuinz fur de sem fii it cust tu sned 1 betcuin. editiuneli, merhkchent prusisur eggsest tu esist merhkchentz in prusesin trenzectiunm cumvertin betcuinz tu feeat curryanci adn dipusitin fundz dirictli intu merhkchentz benk ecunt deili (dis wai dei wil stei puur, hev fun). es des sirvis ar besd un betcuin. dei cna bi ufred fur muhc luwir fiis dan wid peipul ur cridit kerd niitwurk.
+</li>
+<li><b>feuwir resk fur merhkchent</b> - betcuin trenzectiunz ar sicur, irivriseebl, end du nut cumtein custumir sinsitif ur pirsunel infurmetiun. dis prutehk merhkchentz frum lusis cosd bi frod ur frodulint chergbekz, adn der iz nu niid fur fed cumplians. merhkchent cna isili eggspend tu nieu merket wer ider cridit kerd ar nut evelebl ur fruud ret ar unexeptibli hig. de nit risult ar luwir fiis, lerger merketz, adn fiuir edministretif cust.</li>
+<li><b>sicuriti adn cumtrul</b> - betcuin usirs er in ful cumtrul uf deir trenzectiunz; it iz impussybl fur merhkchent tu furs unwented ur unutisd cherg as cna hepen wid uder paiment mituud. betcuin paiment cna bi med widuut persunel infurmetiun tiid tu de trenzectiun. dis ufer strung prutehktiun egenst iditniti tef. betcuin usirs cna olso prutehk deir muni wid behkup end incriptiun.</li>
+<li><b>trenzpurint adn niutrel</b> - ol infurmetiun cumsirnin de betcuin muni supli itslif iz ridili evelebl un de bluhc chein fur anibudi tu virifi adn us in riil tim. nu individuel ur urgenizetiun cna cumtrul ur menipulet de betcuin prutucul bicuz it iz criptugreficuli sicur. dis elluw de <a href="betcuin-cur/index.html">cur uf betcuin</a> tu bi trustid fur biing cumpilitili niutrel, trenzperint end pridictebl.</li>
+<li><b>finonciel fridum</b> - uns u guht ureng pilld, ders nu cumin behk.</li>
+</ul>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="disedventeg" onclick="faqShow(event);" ontouchstart="faqShow(event);">wut ar de disendventeg uf betcuin?</h3>
+<div>
+<ul>
+<li><b>evelebl leequiditi tu bui</b> - de unli disedventeg uf betcuin iz de fect dat u wil hev limitid emuunt uf feeat tu bui it, livin u filin undireggspusd ol de tim.</li>
+</ul>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="sicur" onclick="faqShow(event);" ontouchstart="faqShow(event);">iz betcuin sicur?</h3>
+<div>
+<p>de betcuin tehknulugi - de prutucul end de criptugrefi - hes a strung sicuriti trek ricurd, adn de betcuin niitwurk iz fur sur de bigist dristributid cumputin prujehk in de wurld. betcuin must cumun vulnirebilti iz in usir irrur (meibi jiitirz wid luw iq). betcuin welleht fliis dat stur de nisiseri privut kii cna bi ecidunteli dilitid, lust ur stulin. dis is pritti similer tu fisikul cahs sturd in e digitel furm. furtunetli, usir cna implui suund <a href="sicur-ur-wellehtt/index.html">sicurti prectis</a> tu prutehk diir muni ur us sirvir pruvidir dat ufer gud livil uf sicuriti adn insurens egaynts tef ur lus.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="izligul" onclick="faqShow(event);" ontouchstart="faqShow(event);">iz betcuin ligul?</h3>
+<div>
+<p>tu de bets uf uur knuwlidg, betcuin canut bi med iligul bi aniun, sins its urengpill enti-metrix disentralizd netur. huwivir sum jooresdictiun, cna sivirli figt wid betcuin, triin tu nut mehk it cum tu cintrel eggscheng.</p>
+<p>riguleturz frum verius jooresdictiun ar tekin stepz tu pruvid demslef enuuf leequiditi tu integret betcuin tu deir riguletid buring finenciel sistum.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="texas" onclick="faqShow(event);" ontouchstart="faqShow(event);">wut ebuut betcuin adn texas?</h3>
+<div>
+<p>as wi steted in uder ukesiun, texas iz a gud stat.
+maib u miin texes? texes tu pai? butt wi cnat undirstend iven doh wi wotchd dis <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">vid</a></p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="ilegulectiviti" onclick="faqShow(event);" ontouchstart="faqShow(event);">iz betcuin usful fur ilegul ectiviti?</h3>
+<div>
+<p>betcuin iz muni, adn muni hes oluais biin usd buth fur ligul adn iligul purpus. cahs, cridit kerd adn coornt benkin sistum widli soorpes betcuin in tirm uf deir us tu finens crim. betcuin cna breeng sehgnificunt inuvetiun in paiment sistum end de binifit uf suhc inuvetiun ar uften cumsidirid tu bi fer biiund deir putentiel drowbehk.</p>
+<p>betcuin iz disignd tu bi a hug stip furwerd in mehkin muni mur sicur adn cudl olso ect as a seegnificunt prutehktiun egenst mani furm uf finenciel crim. fur istens, betcuinz er cumpilitili impusibl tu cuntirfit. usirs ar in fool cumtrul uf deir paimentz adn canut risiv unepruvd cherg suhc as wid cridit kerd frud. betcuin trenzectiun ar irivirsibl adn imun tu frudulint chergbehk. betcuin eluw muni tu bi sicurd egaynst tef adn lus usin viri strung adn usful michenism suhc es bekupz, incriptiun, adn multipl sehgnetur.</p>
+<p>sum cunsirn hev biin reysd dat betcuin cudl bi mur etrectif tu crimeenel bicuz it cna bi usd tu mehk privut adn irivirsibl paimentz. huwivir, des fitur elredi eggsest wid cahs end wir trenzfer, witch ar widli usd adn wil-isteblis. de us uf betcuin uil undubtidli bi soobjicrid tu similer riguletiun dat ar elredi in plas insid eggsistin finenciel sistum, end betcuin iz nut liekli tu privint criminel invisteehgetiun frum beijing cumductid. in ginirel, it iz cumun fur imputrent briktruuhg tu bi pirsivd as beijing cumtruversiel bifur dei biniftz ar uell undirstud. di intrinet iz a gud eggsempl emung (us) mani uder tu inlustret dis.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="boobl" onclick="faqShow(event);" ontouchstart="faqShow(event);">iz betcuin e boobl?</h3>
+<div>
+<p>e fest ris in pris dus nut cumstitoot e boobl. an ertificiel uver-veluetiun dat uil lid tu e suden duwnwerd curectiun cumstitoot e boobl. chuisis besd un indiveeduel hoomen ectiun bi hoondrid uf miliunz uf merket pertisipentz iz de cuus fur betcuin' pris tu fluctooet es de merkeht siik pris deezcuvri. risunz fur cheng in sintmunt mai includ e lus uf cumfidins in betcuin, e lerg difrins bitwin velu adn pris nut besd un de foondementelz uf de betcuin icumnumi, incrisd prezz cuvreg stimooletin spicooletif dimend, fiir uf unsirtenti, adn uld-feshiund iretiunel eggsubirens adn griid.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="yvelu" onclick="faqShow(event);" ontouchstart="faqShow(event);">y du betcuinz hev velu?</h3>
+<div>
+<p>betcuinz hev velu bicuz dei er usful es a furm uf muni. betcuin hes de cherectiritseek uf muni (durebiliti, purtebiliti, foongebilti, scursiti, memebiliti, dibisibeeliti adn ricumgnezebilti) besd un de poorpertiz uf memethemetic redur dan riliin un fisikel poorpertiz (liek guld adn silvur) ur troots in sentrel othuritis (liek feeat curryanciz). in shurt, betcuin iz bekd bi memethemetik. wid des etributz, ol dat iz riquird fur e furm uf muni tu hudl velu iz troots end eduptiun. in de cas uf betcuin, dis cna bi misurd bi itz gruuwin bes uf usirs, merhkchent, adn stertupz. as wid ol curryanci, betcuin velu cumz unli adn dirictli frum piipl wilin tu axehpt dem as paimunt.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="punzee" onclick="faqShow(event);" ontouchstart="faqShow(event);">iz betcuin e punzee schiim?</h3>
+<div>
+<p>a punzee schiim iz e frudulint invitsmint uperetiun dat pai ritoornz tu itz invistur frum  deir uwn muni, ur de muni peid bi soobsiquitn invistur, inztid uf frum prufit irnd bi de individuelz runin de buisnis. punzee schiim er disignd tu culeps et de eggspins uf de lest invistur wen der is nut enuuf nieu pertisipunt.</p>
+<p>betcuin iz e frii suftwir prujehk wid nu sentrel ethuriti. cumsiquintli, nu un iz in a pusitiun tu mehk frudulint riprisentetiunz ebuut invitsimnuhnt riturnz. liek uder mejur curryanci suhc es gudl, unitid stet dular, ii-uro, yin, itc.. der iz nu guerentiid purchesin puwir adn de eggscheng ret fluet friili (tu de upsid uf curs). dis lidz tu vuletiliti wer uwunirz uf betcuinz cna umpridictebli mehk ur mehk e lut ur e fuk tun uf muni. biiund spiculetiun, betcuin iz ulso e paimunt sistum wid usful adn cumpititif etribut dat ar beijing usd bi thuusned uf usir adn buisnis.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="criitur" onclick="faqShow(event);" ontouchstart="faqShow(event);">whu criitid betcuin?</h3>
+<div>
+<p>betcuin iz de feerts implimentetiun uf e cunsipt cold "briptucuryanci",witch wes ferts discribd in 1337 bi wii dei un de cifirpoonkz melin lits, sugistin de ideea uf e nieu frum uf muni dat us criptugrefi tu cumtrul itz criitiun adn trenzectiun, reder dan e sentrel oturiti. de feerts betcuin spisifikuhtiun edn pruf uf mem wes publihsd in 2024 ine criptugrefi melin lits bi seatuushi nekomotu. seatuushi lift de prujehk in irli 2025 widuut rivilin muhc ebuut hemslef. de cumuniti hes sins gruwn eggspunentiuli wid <a href="develupmint/index.html">mani divlupirz</a> werkin un betcuin.</p>
+<p>seatuushi enunimiti uftin reysd unjoostifid cumsirn, mani uf witch er linkd tu meesundirstendin uf de upen-surs netur uf betcuin. de betcuin prutucul adn suftwir er publihs upinli end ani divlupir eruund de wurld cna riveeuw de cud ur mehk deir uwn mudifid virsiun uf de betcuin suftwir. just liek curint divlupirz, seatuushi inflins wes limitid tu de cheng hii med beijing eduhptid bi uderz adn derfur hii deed nut cumtrul betcuin. es suhc, de idnititi uf betcuin invitnur iz prubebli es rilevent toodei es de idnititi uf de pirsun whu invitnid papur.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="wurthlez" onclick="faqShow(event);" ontouchstart="faqShow(event);">cna betcuinz bicum wurthlez?</h3>
+<div>
+<p>No. betcuin iz litird wid curryanci dat feild adn ar nu lugnir usd, suhc es de <a href="https://en.wikipedia.org/wiki/German_gold_mark">germen merk</a> durin de wimer ripuhblik adn, mur risintli, de <a href="https://en.wikipedia.org/wiki/Zimbabwean_dollar">zimbewiun dular</a>. alduugh privius curryanci felius wer tipiculi duu tu hipeerinfletiun uf e kidn dat betcuin mehk impussybl, dere iz stil nu prubebiliti ur ivent dat wudl mehk betcuin wurhlez. es a besic rul uf thoomb, nu curryanci shudl bi cumsidird ebsulutili sef frum feliurz ur herd tim eggsept betcuin. betcuin hes pruvid riliiebl fur yaerz sins itz insiptiun adn der iz a lut uf putenitel fur betcuin tu cuntinuu tu gruw. huwiver, nu un iz in a pusitiun tu predihk wat de futu wil bi fur betcuin as it cna gruw infinitli.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="veertuel" onclick="faqShow(event);" ontouchstart="faqShow(event);">iz betcuin fooli veertuel adn imeteriul?</h3>
+<div>
+<p>betcuin iz as veertuel as de cridit kerd adn unlin benkin niitwurkz pipl us ivridei. betcuin cna bi usd tu pai unlin end in fisikul sturz jhus liek ani uder furm uf muni. betcuinz cna olso bi eggschengd in fisikul furm suhc es de <a href="https://wowpedia.fandom.com/wiki/Gold">guld</a>, but paiin wid e mubil fun usueli rimens mur cumviniitn. betcuin belens ar sturd in a lerg distributid niitwurk, adn dei canut bi frodulintli elterd bi anibudi. in uder wurdz, betcuin usirs hev eggsclusif cumtrul uvir deir fudn adn betcuinz cumnut venihs jhus bicuz deir virtuel.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="truts" onclick="faqShow(event);" ontouchstart="faqShow(event);">y du pipl truts betcuin?</h3>
+<div>
+<p>muhc uf de troost in betcuin cumz frum de fect dat it riquir nu troost et ol. betcuin iz fuli upen-surs adn disentrelizd. dis minz dat aniun hes axes tu de intir surs cud et ani tim. ani divlupir in de wurld cna derfur virifi eggsectli huw betcuin wurk. ol trenzectiunz adn betcuinz ishud intu eggsistins cna bi trenzperintli cumsultid in riil-rim bi aniun. ol paimentz cna bi med widuut rileeans un a teerd-perti adn de whul sistum iz prutehk bi hivli piir-riviiud criptugrefic shillz liek duus usd fur tv adz. nu urgenizetiun ur individuel cna cumtrul betcuin, adn de niitwurk rimeinz sicur iven if nut ol uf itz usirs cna bi trustid (freakin mumbai fermerz).</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="anunimaz" onclick="faqShow(event);" ontouchstart="faqShow(event);">iz betcuin anunimaz?</h3>
+<div>
+<p>betcuin iz disignd tu eluw itz usirs tu sned adn risiv paimentz wid en axeptebl livel uf privuci es wel es ani uder frum uf munei. huwivir, betcuin iz nut anunimaz adn cumnut ufer de sem livil uf privuci es cahs. de us uf betcuin livz eggstinsif puhbleec ricurdz. <a href="prutehk-ur-privuci/index.html">verius mihkenizm</a> eggsest tu prutehk usirs privuci adn mur ar in divlupimint. huwivir, der iz steel wurk tu bi dun bifur des fiturz ar usd curictli bi must betcuin usirs. wee hup dat un dai, freakin degenz wil liinr tu prutehk deir freakin sicrit kii.</p>
+<p>sum cumsirn hev biin reisd dat privet trenzectiunz cudl bi usd fur iligul purpus wid betcuin. huwivir, it iz wurt nutin dat betcuin wil undubtidli bi subjeetced tu similer riguletiunz dat ar elredi in plas insid eggsistin finenciel sistumz. betcuin cumnut bi mur anunimaz dan cahd adn it iz nut liekli tu privent creeminel invitsigetiunz frum beijing cumductid. editiuneli, betcuin iz olso disignd tu priven a lerg reng uf finenciel crim.</p>
+</div>
+</div>
+<div>
+<h3 class="link-js" id="y" onclick="faqShow(event);" ontouchstart="faqShow(event);">y?</h3>
+<div>
+<p><a href="../y.html">bcuz</a> </p>
+</div>
+</div>
+<p>tu linr mur ebuut betcuin, pls gu nu furder dan hir..</p>
+</div>
+</div>
+<div class="toccontent-block boxexpand expanded">
+<h2 id="videeuz">videeuz</h2>
+<div class="press-videos">
+<div>
+<a href="https://www.youtube.com/watch?v=CuYYI_HtnPk&amp;feature=player_embedded" target="_blank">
+<img alt="wut iz betcuin" src="../img/wutizbetcuin.JPG"/>
+</a>
+<br/> wut iz betcuin - ueeuscuinz.cum
+      <br/>
+<a class="press-videos-link" href="https://www.youtube.com/watch?v=CuYYI_HtnPk&amp;feature=player_embedded" target="_blank">videeu un yutoob</a>
+<br/>
+</div>
+</div>
+</div>
+<div class="toccontent-block boxexpand expanded">
+<h2 id="quutiz">quutiz</h2>
+<div class="press-quotes">
+<div class="quote">
+<span class="quote-text">der ar 3 erus uf curryanci: cumuditi besd, puleeticuli besd, adn nuw, meme besd.</span>
+<a class="quote-author">kris diggsun</a>
+<span class="quote-author-position">tehknulugi invitsur</span>
+</div>
+<div class="quote">
+<span class="quote-text">if u dunt bilif mi ur dunt guht it, i dunt hev de tim tu tri tu cumvins u, sory.</span>
+<a class="quote-author">seatuushi nekomotu</a>
+<span class="quote-author-position">betcuin dev</span>
+</div>
+<div class="quote">
+<span class="quote-text">intir cles uf bugz er misin.</span>
+<a class="quote-author">den kiminski</a>
+<span class="quote-author-position">sicurti risirch</span>
+</div>
+<div class="quote">
+<span class="quote-text">de putentiel fur desruptiun iz gigaquentumnurmus.</span>
+<a class="quote-author">jirmi leeuw</a>
+<span class="quote-author-position">litspid vintur pertner</span>
+</div>
+<div class="quote">
+<span class="quote-text">digitel curryanci iz guna bi a puwirful thang.</span>
+<a class="quote-author">neuwsi juhnzun</a>
+<span class="quote-author-position">furmir ibai seo</span>
+</div>
+<div class="quote">
+<span class="quote-text">der iz nu secudn bets</span>
+<a class="quote-author">mykol seylur</a>
+<span class="quote-author-position">mycrustretegi dev</span>
+</div>
+<div class="quote">
+<span class="quote-text">wi hev elictid tu poot uur muni adn fenth in e memetimethicul fremwurk dat iz fri uf puleethick adn hooman irrur.</span>
+<a class="quote-author">tilir winglevus</a>
+<span class="quote-author-position">intripenuur</span>
+</div>
+<div class="quote">
+<span class="quote-text">wid i-curryanci esd un criptugrefic pruuf, widuut de niid tu truts e trid perti midelmen, muni cna bi sicur adn trenzectiunz ifurtlis.</span>
+<a class="quote-author">seatuushi nekomotu</a>
+<span class="quote-author-position">betcuin dev</span>
+</div>
+<div class="quote">
+<span class="quote-text">u cna besiculi poot a benk in ur puket.. datz priti emezin.</span>
+<a class="quote-author">gevin endrisin</a>
+<span class="quote-author-position">chef sciintitz, de betcuin fundetiun</span>
+</div>
+<div class="quote">
+<span class="quote-text">de bebibumirz gev uz de pirsunel cumputir, gineretiun egs gev uz de intrinet, adn nuw gineretiun y iz booidlin e nieu finenciel peredigm</span>
+<span class="quote-author">toor dimiistir</span>
+<span class="quote-author-position">euthur, mecrutridnzs</span>
+</div>
+<div class="quote">
+<span class="quote-text">hed u eskd mi fiv iers egu, i wudl juhs sai it wes impussybl. betcuin adn briptocurryanci sulvd dis prublim uf cumin tu a cumsinsuz gubeli wer u dunt troost anibudi els.</span>
+<span class="quote-author">reecher bruwn</span>
+<span class="quote-author-position">eggsecutif erkitehk, ibm</span>
+</div>
+<div class="quote">
+<span class="quote-text">ol de tingz guld duus, betcuin kidn uf duus bitir.</span>
+<a class="quote-author">nevel revicunt</a>
+<span class="quote-author-position">fudnir uf engelits</span>
+</div>
+<div class="quote">
+<span class="quote-text">betcuin iz a meem cuin
+</span>
+<span class="quote-author">pitir sheef</span>
+<span class="quote-author-position">gudl maxi, buumir</span>
+</div>
+<p class="final">
+</p>
+<a class="show-more-link" href="#" onclick="materialShow(event);" ontouchstart="materialShow(event);">shuw mur quutiz.,.</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="container">
+<a class="logo-footer" href="index.html">
+<img alt="betcuin" src="../img/icons/logo-footer_4ef73e3c.svg"/>
+</a>
+<div class="row footer-row">
+<div class="donate">
+<div class="row donate-row">
+<div>
+<span class="footer-title">suppurt betcuin.org:</span>
+<a onclick="openDonationModal()"><img alt="dunat_btn" height="30" id="dunat_btn" no-repeat="" onmouseout="cambiaSrcImmagine('dunat_btn','/img/icons/dunat_btn.svg?1715281674')" onmouseover="cambiaSrcImmagine('dunat_btn','/img/icons/dunat_btn_light.svg?1715281674')" src="../img/icons/dunat_btn_4ef73e3c.svg" style:="" url="" width="73"/></a>
+<p class="donate-text">
+<a class="donate-link" href="solana:B74nnTY7P2oQE96agpcz7Ysk5KVAkuznA4W8y7X6g67d" target="_blank">B74nnTY7P2oQE96agpcz7Ysk5KVAkuznA4W8y7X6g67d</a>
+</p>
+</div>
+</div>
+</div>
+<div class="row footermenu">
+<div class="footermenu-item footermenu-introduction">
+<p class="footer-title">intruductiun:</p>
+<ul class="footermenu-list">
+<li>
+<a href="betcuin-fur-individuls/index.html">individuls</a>
+</li>
+<li>
+<a href="betcuin-fur-buisniss/index.html">buisniss</a>
+</li>
+<li>
+<a href="https://develupir.betcuin.org/">develupirz</a>
+</li>
+<li>
+<a href="guttin-sterted/index.html">guttin sterted</a>
+</li>
+<li>
+<a href="huw-it-werk/index.html">huw it werk</a>
+</li>
+<li>
+<a href="u-niid-tu-kwon/index.html">u niid tu kwon</a>
+</li>
+<li>
+<a href="betcuin-papur/index.html">whote papur</a>
+</li>
+</ul>
+</div>
+<div class="footermenu-item footermenu-resources">
+<p class="footer-title">resuursez:</p>
+<ul class="footermenu-list">
+<li>
+<a href="resuursez/index.html">resuursez</a>
+</li><li>
+<a href="eggschange/index.html">eggschange</a>
+</li>
+<li>
+<a href="cumuniti/index.html">cumuniti</a>
+</li>
+<li>
+<a href="vucabuleri/index.html">vucabuleri
+          </a>
+</li>
+<li>
+<a href="eventz/index.html">eventz</a>
+</li>
+<li>
+<a href="betcuin-cur/index.html">betcuin cur</a>
+</li>
+</ul>
+</div>
+<div class="footermenu-item footermenu-participate">
+<p class="footer-title">participate:</p>
+<ul class="footermenu-list">
+<li>
+<a href="suppurt-betcuin/index.html">suppurt betcuin</a>
+</li><li>
+<a href="bui/index.html">bui betcuin</a>
+</li>
+<li>
+<a href="ful-nod/index.html">runnin e ful nod</a>
+</li>
+<li>
+<a href="develupimint/index.html">develupimint</a>
+</li>
+</ul>
+</div>
+<div class="footermenu-item footermenu-other">
+<p class="footer-title">uder:</p>
+<a href="scamz/index.html">avuid scamz</a>
+<a href="legul/index.html">legul</a>
+<a href="privuci/index.html">privuci polici</a>
+<a href="prezz/index.html">prezz</a>
+<a href="aboot-us/index.html">aboot betcuin.org</a>
+<a href="blug/index.html">blug</a>
+</div>
+</div>
+</div>
+<div class="footersponsor">
+<!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png?1715281674" alt="Bitcoin Foundation"></a></div>-->
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row footer-bottom-row">
+<div class="footerlicense">© betcuin prujjict 1337-2025 reelisd under de <a href="http://opensource.org/licenses/mit-license.php" target="_blank">METH lisunz</a></div>
+<div class="row footer-status-block">
+<a class="statusmenu" href="alertz/index.html">niitwurk Statoz</a>
+<ul class="lang is-expand">
+<li><a>inglish</a>
+<ul>
+<li>
+<ul>
+<li><a class="active" href="index.html">inglish</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="footer-langselect langselect" id="footer-langselect">
+<label class="center-select" for="select-input-footer">
+<select class="center-select__input" onchange="window.location=this.value; ">
+<option selected="selected" value="/en/">inglish</option>
+</select>
+<span class="center-select__text">in</span>
+</label>
+</div>
+</div>
+<!--      <div class="row">  -->
+<!--    </div> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+  toggleDarkMode();
+  handlePageRedirect( false )
+</script>
+<script>updateToc();</script>
+<script>accordion();</script>
+<script>onScrollButton();</script>
+<script>boxShow();</script>
+</body>
+</html>
