@@ -9,7 +9,14 @@
         function cambiaSrcImmagine(ID,nuovoSrc) {
             var imgElement = document.getElementById(ID);
             if (imgElement) {
-                imgElement.src = nuovoSrc;
+                if (!imgElement.getAttribute('data-orig')) {
+                    imgElement.setAttribute('data-orig', imgElement.src);
+                }
+                if (nuovoSrc && nuovoSrc.indexOf('_light') !== -1) {
+                    imgElement.src = nuovoSrc;
+                } else {
+                    imgElement.src = imgElement.getAttribute('data-orig');
+                }
             } else {
                 console.log("Elemento img non trovato.");
             }
